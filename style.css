@@ -82,8 +82,96 @@ background-image:url(imgs/apache.png);
  	margin-top:100px;
 	text-align:center;
 	padding:10px;
-
 }
 
+/* Play para o jogador e para o inimigo1 */
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+/* Play2 para o amigo*/
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+/* Animação do jogador */
+
+.anima1 {
+	background-image:url(imgs/helicoptero.png);
+	animation:play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+}
+
+
+/* Animação inimigo1 */
+
+.anima2 {
+    background-image:url(../imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite; 
+}
+
+/* Animação amigo */
+
+.anima3 {
+	background-image:url(../imgs/amigo.png);
+	animation:play2 .9s steps(12) infinite;
+	-webkit-animation: play2 .9s steps(12) infinite;
+       -moz-animation: play2 .9s steps(12) infinite;
+        -ms-animation: play2 .9s steps(12) infinite;
+         -o-animation: play2 .9s steps(12) infinite;
+}
 
 
